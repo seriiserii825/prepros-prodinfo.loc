@@ -4490,6 +4490,10 @@ readers do not read off random characters that represent icons */
 html,
 body {
   font-size: 17px; }
+  html.fixed,
+  body.fixed {
+    padding-right: 14px;
+    overflow: hidden; }
 
 body {
   margin: 0;
@@ -5229,7 +5233,8 @@ p {
 .footer {
   position: relative;
   padding: 30px;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 1; }
   .footer::before {
     content: '';
     position: absolute;
@@ -5364,7 +5369,8 @@ p {
   align-items: center;
   height: 224px;
   color: white;
-  background-size: cover; }
+  background-size: cover;
+  z-index: 1; }
   .page-intro::before {
     content: '';
     position: absolute;

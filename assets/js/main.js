@@ -18,11 +18,13 @@ $(function () {
 	});
 
 	let sandwitch = function () {
+		let mainMenu = $('#js-main-menu');
+
 		$('#js-sandwitch').on('click', function () {
 			if ($(window).width() < 1100) {
 				$(this).toggleClass('sandwitch--active');
-				let mainMenu = $('#js-main-menu');
 				mainMenu.toggleClass('active');
+				$('body').toggleClass('fixed');
 			}
 		});
 	};
